@@ -7,6 +7,7 @@
             //Part 1
             Console.WriteLine("Part 1");
             Console.WriteLine();
+            Console.WriteLine("==========================================");
 
             //Weight Conversion
             double weightInlbs = 0;
