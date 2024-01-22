@@ -68,28 +68,8 @@
             Console.WriteLine("==========================================");
 
             //Temperature Conversion
-            double tempInF = 0;
-            while (tempInF <= 0)
-            {
-                Console.Write("Temperature in Fahrenheit (°F): ");
-                string input3 = Console.ReadLine();
-                if (double.TryParse(input3, out double value3))
-                {
-                    if (value3 <= 0)
-                    {
-                        Console.WriteLine("Invalid input.");
-                    }
-                    else
-                    {
-                        tempInF = value3;
-                        break;
-                    }
-                }
-                else
-                {
-                    Console.WriteLine("Invalid input.");
-                }
-            }
+            Console.Write("Temperature in Fahrenheit (°F): ");
+            double tempInF = Convert.ToDouble(Console.ReadLine());
             double tempInC = (tempInF - 32) * 5 / 9;
             double roundedTempInC = Math.Round(tempInC, 2);
             Console.WriteLine($"Temperature converted to Celsius (°C): {roundedTempInC}");
